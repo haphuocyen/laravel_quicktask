@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <h3 style="display: inline-block">Add Task</h3>
+    <a href="{{ route('tasks.index')}}" style="float: right; margin-right : 10px">List Task</a>
 
     <!-- Bootstrap Boilerplate... -->
 
@@ -17,7 +19,7 @@
                 <label for="task" class="col-sm-3 control-label">Name Task</label>
 
                 <div class="col-sm-6">
-                    <input type="text" name="name" id="task-name" class="form-control">
+                    <input type="text" name="task_name" id="task_name" class="form-control">
                 </div>
             </div>
 
